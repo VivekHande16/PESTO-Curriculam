@@ -7,6 +7,8 @@
 
 ## High Level Components of a browser
 
+![](Images/1.png)
+
 ### 1. User Interface:
 
 - The user interface is the space where User interacts with the browser. It includes the address bar, back and next buttons, home button, refresh and stop, bookmark option, etc. Every other part, except the window where requested web page is displayed, comes under it.
@@ -44,18 +46,22 @@
 
 - The primary function of a browser rendering engine is to visualize the content requested by users in an interactive view. For instance, if a user requests an HTML script content, the rendering engine’s job is to parse the CSS and HTML. Henceforth, the content is displayed after being parsed through a rendering engine. The scalable dimension-based format ensures a rendered display significantly restoring an original page layout interpreted from its original form, while indulging scaling and panning features of the web content in real-time environment. The interaction between the end-user through an interface & the rendering engine is facilitated by the browser engines. It facilitates with a high-level interface between the User Interface and Rendering engine.
 
+![](Images/2.png)
+
 - A network layer tenders the browser rendering engine with the requested document by the user. The contents available in such document is then transferred in parts of sizes of 8 kilobyte each. In this order, the below points are furthered to accomplish this process as mentioned below :
 The rendering engine will start parsing the HTML document and convert elements to DOM nodes in a tree called the "content tree". The engine will parse the style data, both in external CSS files and in style elements. Styling information together with visual instructions in the HTML will be used to create another tree: the render tree.
 - The render tree contains rectangles with visual attributes like color and dimensions. The rectangles are in the right order to be displayed on the screen.
 After the construction of the render tree it goes through a "layout" process. This means giving each node the exact coordinates where it should appear on the screen. The next stage is painting–the render tree will be traversed and each node will be painted using the UI backend layer.
 - It's important to understand that this is a gradual process. For better user experience, the rendering engine will try to display contents on the screen as soon as possible. It will not wait until all HTML is parsed before starting to build and layout the render tree. Parts of the content will be parsed and displayed, while the process continues with the rest of the contents that keeps coming from the network.
- 
+
+![](Images/3.png)
 
 ## Parsers (HTML, CSS, etc)
 - There are two types of parsers: top down parsers and bottom up parsers. An intuitive explanation is that top down parsers examine the high level structure of the syntax and try to find a rule match. Bottom up parsers start with the input and gradually transform it into the syntax rules, starting from the low level rules until high level rules are met.
 - The word parsing means to divide something into its components and then describe their syntactic roles. The word processing is a familiar word and stands for dealing with something using a standard procedure. Combined these two explain how HTML parser works in generating DOM trees from text/html resources.
 
- 
+![](Images/4.png)
+
 - parsing is nothing but processing of the code written by developer to visual format. parsing of the html and Css means that how the browser will process them and how it will arrange our code in the visual format  on the browser screen.
 - When the user requested the website then the browser will request the HTML document from the server and the browser will load up the code in the HTML document.
 - This approach defines the parsing rules for HTML documents for determining whether they are syntactically correct or not. The points where the syntax fails to match, a parse error is initiated. At the end of the procedure if a resource is determined to be in the HTML syntax, then it is an HTML document.
@@ -66,17 +72,25 @@ After the construction of the render tree it goes through a "layout" process. Th
 - Since every HTML element has different properties, the Node object will be created from different classes (constructor functions). For example, the Node object for the div element is created from HTMLDivElement which inherits Node class.
 - The browser comes with built-in classes like HTMLDivElement, HTMLScriptElement, Node etc.
 After the browser has created Nodes from the HTML document, it has to create a tree-like structure of these node objects. Since our HTML elements in the HTML file are nested inside each other, the browser needs to replicate that but using Node objects it has previously created. This will help the browser efficiently render and manage the webpage throughout its lifecycle.
+
+![](Images/5.png)
  
 - JavaScript doesn’t understand what DOM is, it is not part of the JavaScript specifications. DOM is a high-level Web API provided by the browser to efficiently render a webpage and expose it publically for the developer to dynamically manipulate DOM elements for various purposes.
 
 ## CSS Object Model (CSSOM)
 - After constructing the DOM, the browser reads CSS from all the sources (external, embedded, inline, user-agent, etc.) and construct a CSSOM. CSSOM stands for CSS Object Model which is a Tree Like structure just like DOM.
-- Each node in this tree contains CSS style information that will be applied to DOM elements that it target (specified by the selector). CSSOM, however, does not contain DOM elements which can’t be printed on the screen like <meta>, <script>, <title> etc.
+
+![](Images/6.png)
+
+- Each node in this tree contains CSS style information that will be applied to DOM elements that it target (specified by the selector). CSSOM, however, does not contain DOM elements which can’t be printed on the screen.
+
  
 ## Render Tree
 
 - Render-Tree is also a tree-like structure constructed by combining DOM and CSSOM trees together. The browser has to calculate the layout of each visible element and paint them on the screen, for that browser uses this Render-Tree. Hence, unless Render-Tree isn’t constructed, nothing is going to get printed on the screen which is why we need both DOM and CSSOM trees.
 - As Render-Tree is a low-level representation of what will eventually get printed on the screen, it won’t contain nodes that do not hold any area in the pixel matrix. For example, display:none; elements have dimensions of 0px X 0px, hence they won’t be present in Render-Tree.
+
+![](Images/7.png)
  
 ## Rendering Sequence
 
