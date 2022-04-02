@@ -1,5 +1,6 @@
 
 ## First Design
+- Department of Road safety, Chicago designed a road intersection. 
 - Here in this intersection two perpendicular roads meet. Both roads have three lanes of traffic traveling in opposite directions. The intersection meet minimum federal and state safety standards for vehicular and pedestrian traffic. 
  
 ![](before.png)
@@ -9,11 +10,11 @@
 ## Solution:
 ### Top view design
 
-![ ](AssignSolution.png)
+![](AssignSolution.png)
  
-- Department of Road safety, Chicago designed a new solution to accommodate the bike passage and pedestrian passage for people to move safely on roads.
+- Department designed a new solution to accommodate the bike passage and pedestrian passage for people to move safely on roads.
 -The red line shows the bike passage in which only bikes are allowed to use the passage. Other vehicle and pedestrians are not allowed to use this passage only they can cross through passage.
-White boxes shows the pedestrian passage. It is specific to pedestrians only. Other vehicle can only cross through the passage. Pedestrians can use grey box space in passage to take a stop before crossing the road. Pedestrians no longer need to cross the road at one go they can stop at the Grey space in passage. This takes into consideration for elderly people and persons with disabilities who cannot cross road in one go.
+- White boxes shows the pedestrian passage. It is specific to pedestrians only. Other vehicle can only cross through the passage. Pedestrians can use grey box space in passage to take a stop before crossing the road. Pedestrians no longer need to cross the road at one go they can stop at the Grey space in passage. This takes into consideration for elderly people and persons with disabilities who cannot cross road in one go.
 
 ### Key improvements:
 ### 1.	Pedestrians Passage
@@ -37,13 +38,13 @@ White boxes shows the pedestrian passage. It is specific to pedestrians only. Ot
 - We know that protected bike lanes are the key to getting the average person to consider traveling by bike. Sharing busy traffic lanes with cars is absolutely un-acceptable, and separation by a line of paint is often not enough. 
 
 #### There are four main elements to protected intersection designs: 
-- A Corner Refuge Island 
+1. Corner Refuge Island 
 
-- A Forward Stop Bar for Biker
+2. Forward Stop Bar for Biker
 
-- A Setback bike and pedestrian crossing 
+3. Setback bike and pedestrian crossing 
 
-- Biker Friendly Signal phasing 
+4. Biker Friendly Signal phasing 
 
 #### The Corner Refuge Island 
 - The corner refuge island is the key element that makes these intersections function. This island brings the protective barrier from the bike lane far into the intersection. 
