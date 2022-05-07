@@ -29,3 +29,5 @@ const addM = memoizeAdd(add);
 
 time( () => addM(200, 400));
 time( () => addM(200, 400));
+
+
